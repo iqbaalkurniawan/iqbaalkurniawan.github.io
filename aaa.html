@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>noname</title>
+   <style>
+      * {
+         margin: auto;
+      }
+      .satu {
+         width: 100%;
+         height: 100vh;
+         background: grey;
+      }
+      .dua {
+         width: 100%;
+         height: 100vh;
+         background: green;
+      }
+      .tiga {
+         width: 100%;
+         height: 100vh;
+         background: salmon;
+      }
+      nav {
+         width: 100%;
+         height: 50px;
+         background: black;
+         position: fixed;
+      }
+      nav a {
+         color: white;
+         font-size: 20px;
+         padding: 10px;
+      }
+      .active {
+         background: salmon;
+      }
+   </style>
+</head>
+<body>
+<nav>
+   <a href="#satu" class="page active">SATU</a>
+   <a href="#dua" class="page">DUA</a>
+   <a href="#tiga" class="page">TIGA</a>
+</nav>
+<div class="satu" id="satu"></div>
+<div class="dua" id="dua"></div>
+<div class="tiga" id="tiga"></div>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.easing.js"></script>
+<script>
+
+   $(".page").click(function(){
+      var target = $(this).attr("href");
+      var eltujuan = $(target).offset().top;
+      
+      $('html,body').animate({
+         scrollTop: eltujuan
+      },800,'easeInOutExpo');   
+
+      switch(target){
+         case '#satu':
+            $(this).siblings().removeClass("active");
+            $(this).addClass("active");
+         break;
+         case '#dua':
+            $(this).siblings().removeClass("active");
+            $(this).addClass("active");
+         break;
+         case '#tiga':
+            $(this).siblings().removeClass("active");
+            $(this).addClass("active");
+         break;
+      }
+      event.preventDefault();
+   });
+
+</script>
+</body>
+</html>

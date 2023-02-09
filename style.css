@@ -1,0 +1,105 @@
+.text-yellow {
+  color: yellow;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-abuabu {
+  background-color: #f3f3f3;
+}
+
+.textShadow-dark {
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+}
+
+.textShadow-light {
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.99);
+}
+
+.border-hitam {
+  border: 2px solid black;
+}
+
+.Home {
+  padding-top: 25vh;
+  padding-bottom: 25vh;
+  height: 95vh;
+}
+
+.About {
+  padding-top: 40vh;
+  padding-bottom: 40vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 95vh;
+  line-height: 30px;
+  /* background-image: url(img/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.About p,
+.Readme p {
+  font-size: 17px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.font-comfortaa {
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+}
+
+.font-ultra {
+  font-family: "Righteous", cursive;
+}
+
+.gambar {
+  position: relative;
+}
+
+.gambar1 {
+  margin-top: -67%;
+}
+
+.gambar img {
+  position: relative;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.gambar .gambar1:hover {
+  opacity: 0;
+}
+
+#project {
+  padding-top: 8rem;
+}
+
+#readme {
+  padding-top: 8rem;
+}
+
+#contact {
+  padding-top: 8rem;
+}
+
+.fs-kecil {
+  font-size: 12px;
+}
+
+a .medsos {
+  width: 70px;
+}
